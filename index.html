@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michaël Bettan | Cloud Data Architect & FinOps Engineer</title>
+    <title>Michaël Bettan | Cloud Data Architect</title>
     <meta name="description" content="Portfolio of Michaël Bettan, specializing in Google Cloud, Data Architecture, and FinOps.">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mbettan.github.io/">
-    <meta property="og:title" content="Michaël Bettan | Cloud & Data Engineering">
-    <meta property="og:description" content="Portfolio of Michaël Bettan, specializing in Google Cloud, Data Architecture, and FinOps.">
+    <meta property="og:title" content="Michaël Bettan | Cloud Data Architect">
+    <meta property="og:description" content="Specializing in Google Cloud, Data Architecture, and Enterprise FinOps.">
     <meta property="og:site_name" content="Michaël Bettan">
-    <meta property="og:locale" content="en_US">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -30,29 +29,102 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <main class="container">
-        <header class="profile">
-            <h1>Michaël Bettan</h1>
-            <p class="tagline">Cloud Data Architect &amp; FinOps Engineer</p>
-            <div class="social-links">
-                <a href="https://github.com/mbettan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </header>
+    <div class="ambient-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
 
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-card">
-                <div class="project-icon"><i class="fas fa-wave-square"></i></div>
-                <div class="project-info">
-                    <h3><a href="https://mbettan.github.io/bq-finops-optimizer/" target="_blank">BQ FinOps Optimizer</a></h3>
-                    <p>An enterprise-grade BigQuery FinOps diagnostic suite and interactive simulation engine to maximize cost efficiency and eliminate waste across Google Cloud organizations.</p>
+    <main class="layout-container">
+        <!-- Profile Column -->
+        <section class="profile-section">
+            <div class="profile-card glass-panel">
+                <div class="avatar-ring">
+                    <div class="avatar-content"><i class="fas fa-terminal"></i></div>
+                </div>
+                <h1 class="brand-title">Michaël Bettan</h1>
+                <h2 class="brand-subtitle">Cloud Data Architect &amp; FinOps Engineer</h2>
+                
+                <p class="bio">
+                    Building high-performance data platforms and optimization tooling for the enterprise on Google Cloud. 
+                    Obsessed with semantic SQL, serverless scalability, and driving ROI through strict FinOps governance.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://github.com/mbettan" class="social-btn" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
                 </div>
             </div>
         </section>
+
+        <!-- Projects Column -->
+        <section class="projects-section">
+            <h3 class="section-label">Featured Engineering</h3>
+            
+            <div class="project-grid">
+                
+                <!-- BQ FinOps Optimizer -->
+                <a href="https://mbettan.github.io/bq-finops-optimizer/" class="project-card glass-panel" target="_blank">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon icon-blue"><i class="fas fa-wave-square"></i></div>
+                        <div class="project-status">
+                            <span class="pulse-dot"></span> Live
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h4>BQ FinOps Optimizer</h4>
+                        <p>Enterprise diagnostic suite & simulation engine for BigQuery. Rightsizes Edition capacities, identifies slot waste, and enforces automated organizational governance.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">BigQuery</span>
+                    </div>
+                </a>
+
+                <!-- Developer Showroom -->
+                <a href="https://mbettan.github.io/showroom/" class="project-card glass-panel" target="_blank">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon icon-mint"><i class="fas fa-chart-pie"></i></div>
+                        <div class="project-status static-dot">
+                            <span>View All Projects</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h4>Developer Showroom</h4>
+                        <p>A completely automated, serverless portfolio engine. Tracks GitHub repository metrics, maintains historical traffic ledgers, and renders interactive Chart.js dashboards.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">REST APIs</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
     </main>
+
+    <script>
+        // Interactive glow effect on cards
+        document.addEventListener('mousemove', (e) => {
+            document.querySelectorAll('.project-card').forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
 </body>
 </html>
