@@ -23,6 +23,3 @@ All projects: [mbettan.github.io/showroom](https://mbettan.github.io/showroom/)
 `Python` `TypeScript` `SQL` · `MCP` `Google ADK` `Vertex AI` `Gemini` `OpenAI API` `Claude` ·
 `BigQuery` `Iceberg` `Kafka` `pgvector` · `GCP` `AWS` `Kubernetes` `Terraform` `GitHub Actions`
 
-#### Elsewhere
-[LinkedIn](https://www.linkedin.com/in/mbettan/) · Google Cloud Professional Data Engineer ·
-Two-time President's Club · I also ride competitive eventing (show jumping and cross-country) 🐎
