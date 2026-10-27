@@ -1,7 +1,7 @@
 ### Hi, I'm Michaël 👋
 
 Applied AI Architect in New York. For 17 years I've helped enterprises take cloud, data and AI
-from discovery to production, most recently in generative AI and data analytics at Google Cloud.
+from discovery to production, most recently in generative AI and data analytics.
 
 I build the harness around frontier models: **agents, MCP servers, model routing, evals and guardrails**,
 tuned as one system. Most of my engineering goes into verification, not generation.
